@@ -1,0 +1,32 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+# null (or ~) value means symlink from file with same name without leading dot
+- link:
+    ~/.dotfiles: ''
+
+    # zsh & terminator
+    ~/.oh-my-zsh: ~
+    ~/antigen: ~
+    ~/.zshrc: ~
+    ~/.fonts: ~
+    ~/.fzf: ~
+    ~/.config/terminator: config/terminator
+
+    # git
+    ~/.gitconfig: ~
+    ~/.gitignore_global: ~
+
+    # vim
+    ~/.vimrc: ~
+    ~/.vim/bundle: vim/bundle
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [fc-cache -f ~/.fonts, Rebuilding font cache]
+  - [~/.fzf/install --all, Installing fzf]
+  - [vim +PluginInstall +qall, Installing vim plugins with Vundle]

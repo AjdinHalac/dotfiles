@@ -1,0 +1,12 @@
+# Other misc files   #
+######################
+
+
+# IDE specific files #
+######################
+.idea
+.settings
+.project
+.classpath
+.vscode
+.cache
