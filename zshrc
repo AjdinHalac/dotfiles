@@ -73,10 +73,14 @@ export PATH=$PATH:vendor/bin:~/.composer/vendor/bin
 #export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools
 export PATH=$PATH:~/Apps/android-sdk-linux/tools:~/Apps/android-sdk-linux/platform-tools
 
+#Java path
 export JAVA_VERSION=jdk-10
 export JAVA_HOME=~/Downloads/$JAVA_VERSION
 export PATH=$PATH:~/Downloads/$JAVA_VERSION/bin
 export CLASSPATH=$CLASSPATH:~/Downloads/$JAVA_VERSION/lib
+
+#Go path
+export PATH=$PATH:/usr/local/go/bin
 
 #Add arcanist to path
 export PATH="$PATH:/home/ahalac/arcanist/arcanist/bin/"
