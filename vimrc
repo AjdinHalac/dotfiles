@@ -52,6 +52,7 @@ Plugin 'plasticboy/vim-markdown'
 
 Plugin 'mhinz/vim-startify'
 
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
