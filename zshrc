@@ -80,7 +80,9 @@ export PATH=$PATH:~/Downloads/$JAVA_VERSION/bin
 export CLASSPATH=$CLASSPATH:~/Downloads/$JAVA_VERSION/lib
 
 #Go path
-export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
+export GOPATH=/home/ahalac/go
+export PATH=$PATH:$GOROOT/bin
 
 #Add arcanist to path
 export PATH="$PATH:/home/ahalac/arcanist/arcanist/bin/"
