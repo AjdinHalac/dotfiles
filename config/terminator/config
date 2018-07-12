@@ -50,6 +50,7 @@
     cursor_color = "#58e0d3"
     font = "SourceCodePro+Powerline+Awesome Regular, 13"
     foreground_color = "#e6ebf0"
+    icon_bell = False
     palette = "#263238:#ec407a:#8bc34a:#ffa726:#2196f3:#9575cd:#00bcd4:#eceff1:#617d8a:#ec407a:#9ccc65:#ffb74d:#42a5f5:#b39ddb:#26c6da:#ffffff"
     scrollback_infinite = True
     scrollbar_position = hidden

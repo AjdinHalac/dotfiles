@@ -5,6 +5,10 @@
 # IDE specific files #
 ######################
 .idea
+build/
+.idea/
+.gradle
+gradle/
 .settings
 .project
 .classpath

@@ -1,5 +1,5 @@
 [core]
-    excludesfile = /home/ahalac/.gitignore_global
+	excludesfile = /home/ahalac/.gitignore_global
     autocrlf = input
 [user]
     name = Ajdin Halac

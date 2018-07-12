@@ -1,5 +1,4 @@
 set nocompatible " be iMproved, required
-
 " Set shell to zsh (fish and VIM don't play well together)
 set shell=zsh
 "Don't dump distracting text to terminal during searches!
@@ -46,12 +45,11 @@ Plugin 'xolox/vim-misc' " dependency for other xolox plugins
 Plugin 'xolox/vim-session'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-easytags'
-
 Plugin 'godlygeek/tabular' " dependency for vim-markdown
 Plugin 'plasticboy/vim-markdown'
 
 Plugin 'mhinz/vim-startify'
-
+Plugin 'leafgarland/typescript-vim'
 Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
@@ -80,9 +78,11 @@ colorscheme slate
 " General config
 """"""""""""""""
 
+set mouse=a
+set guicursor=
 set number              " Enable linenumbers
 set hidden              " Leave hidden buffers open 
-set history=1000        " Save last 1000 commands
+set history=10          " Save last 1000 commands
 set showcmd             " Show incomplete cmds down the bottom
 set autoread            " Reload files modified outside vim
 set hlsearch            " Highlight search results
@@ -97,7 +97,7 @@ set softtabstop=4
 set tabstop=4
 set splitright          " Open veritcal split right of current window
 set splitbelow          " Open horizontal split below current window
-
+set virtualedit=onemore 
 " Display extra whitepsace like tabs and trailing spaces
 set list
 set list listchars=tab:->,trail:·,extends:#,nbsp:·
@@ -179,33 +179,15 @@ cmap w!! w !sudo tee > /dev/null %
 
 let mapleader = ","
 
-map § ~
-map <space> /
-
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
-map <leader>ö :bNext<cr>
-map <leader>ä :bprev<cr>
-
-map <leader>pp :setlocal paste!<cr>
-
-map <leader>rr :source ~/.vimrc<CR> 
-
-" standard copy-paste hotkeys (http://superuser.com/a/189198)
-vmap <C-c> "+yi
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <C-r><C-o>+
 
 " easier window navigation (http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally)
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
 map <F12> :NERDTreeToggle<CR>
-nmap <F8> :TagbarToggle<CR>
 

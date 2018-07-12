@@ -84,6 +84,8 @@ export GOROOT=/usr/local/go
 export GOPATH=/home/ahalac/go
 export PATH=$PATH:$GOROOT/bin
 
+ssh-add ~/.ssh/id_rsa
+
 #Add arcanist to path
 export PATH="$PATH:/home/ahalac/arcanist/arcanist/bin/"
 
