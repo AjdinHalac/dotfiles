@@ -3,6 +3,7 @@ set nocompatible " be iMproved, required
 set shell=zsh
 "Don't dump distracting text to terminal during searches!
 set shellpipe=2>/dev/null>
+set clipboard=unnamedplus
 
 """"""""""""""""""""""""
 " Vundle setup + plugins
@@ -43,7 +44,6 @@ Plugin 'skammer/vim-css-color'
 
 Plugin 'xolox/vim-misc' " dependency for other xolox plugins
 Plugin 'xolox/vim-session'
-Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-easytags'
 Plugin 'godlygeek/tabular' " dependency for vim-markdown
 Plugin 'plasticboy/vim-markdown'
@@ -125,10 +125,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|vendor\|git|static\
 let g:session_autosave = 'no'
 let g:session_autoload = 'no'
 
-" xolox/vim-notes
-"""""""""""""""""
-let g:notes_directories = ['~/Dropbox/Draft/vim-notes']
-
 " airblade/vim-gitgutter
 """"""""""""""""""""""""
 " fix gutter colors according to https://github.com/airblade/vim-gitgutter/issues/164
@@ -179,15 +175,15 @@ cmap w!! w !sudo tee > /dev/null %
 
 let mapleader = ","
 
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+map J <C-W>j
+map K <C-W>k
+map H <C-W>h
+map L <C-W>l
 
 " easier window navigation (http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally)
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-map <F12> :NERDTreeToggle<CR>
+map <Space> :NERDTreeToggle<CR>
 

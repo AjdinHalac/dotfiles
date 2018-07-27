@@ -91,7 +91,7 @@ export PATH="$PATH:/home/ahalac/arcanist/arcanist/bin/"
 
 c7eup(){
     docker-compose -f ~/Documents/Code/NSoft/Catalogue/c-e-localtraefik/docker-compose.yml up -d
-    ~/Documents/Code/NSoft/Catalogue/c-e-config-central/localdocker-start.sh -d
+    ~/Documents/Code/NSoft/Catalogue/c7e-config-central/localdocker-start.sh -d
 }
 
 c7edown(){
@@ -100,7 +100,7 @@ c7edown(){
     docker-compose -f ~/Documents/Code/NSoft/Catalogue/c-e-edge/docker-compose.yml down
     docker-compose -f ~/Documents/Code/NSoft/Catalogue/c-e-tenantmanager/docker-compose.yml down
     docker-compose -f ~/Documents/Code/NSoft/Catalogue/c7e-pm/docker-compose.yml down
-    docker-compose -f ~/Documents/Code/NSoft/Catalogue/c-e-config-central/docker-compose.yml down
+    docker-compose -f ~/Documents/Code/NSoft/Catalogue/c7e-config-central/docker-compose.yml down
     docker-compose -f ~/Documents/Code/NSoft/Catalogue/c-e-localtraefik/docker-compose.yml down
     docker system prune -f
 }

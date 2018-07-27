@@ -40,6 +40,24 @@
       parent = child1
       profile = default
       type = Terminal
+  [[New Layout 1]]
+    [[[child0]]]
+      fullscreen = True
+      last_active_term = a0af409f-3b26-4811-82e2-81e5630446b4
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1600, 900
+      title = ahalac@ahalac: ~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = a0af409f-3b26-4811-82e2-81e5630446b4
 [plugins]
 [profiles]
   [[default]]
