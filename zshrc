@@ -30,11 +30,11 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="white"
 POWERLEVEL9K_STATUS_VERBOSE=false
 POWERLEVEL9K_TIME_BACKGROUND="black"
+POWERLEVEL9K_DATE_BACKGROUND="black"
 POWERLEVEL9K_TIME_FOREGROUND="249"
+POWERLEVEL9K_DATE_FOREGROUND="249"
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
-POWERLEVEL9K_COLOR_SCHEME='light'
-POWERLEVEL9K_VCS_GIT_ICON='\uE1AA'
-POWERLEVEL9K_VCS_GIT_GITHUB_ICON='\uE1AA'
+POWERLEVEL9K_COLOR_SCHEME='dark'
 POWERLEVEL9K_HIDE_BRANCH_ICON=true
 
 antigen theme bhilburn/powerlevel9k powerlevel9k
@@ -50,6 +50,7 @@ alias la="exa -lahg --git --time-style=long-iso --group-directories-first"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 archlinux-java get
+go version
 
 ####################################################################################
 # Partial match and tab highlight                                                  #
