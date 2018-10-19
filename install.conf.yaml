@@ -13,9 +13,7 @@
     ~/.oh-my-zsh: ~
     ~/antigen: ~
     ~/.zshrc: ~
-    ~/.fonts: ~
     ~/.fzf: ~
-    ~/.config/terminator: config/terminator
 
     # git
     ~/.gitconfig: ~

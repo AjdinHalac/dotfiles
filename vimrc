@@ -18,39 +18,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-
-Plugin 'tpope/vim-fugitive'
-
-Plugin 'gregsexton/gitv'
-
-Plugin 'airblade/vim-gitgutter'
-
-Plugin 'kien/ctrlp.vim'
-
-Plugin 'mileszs/ack.vim'
-
 Plugin 'scrooloose/nerdtree'
-
-Plugin 'majutsushi/tagbar'
-
-Plugin 'jeetsukumaran/vim-buffergator'
-
 Plugin 'Raimondi/delimitMate'
-
 Plugin 'skammer/vim-css-color'
-
-Plugin 'xolox/vim-misc' " dependency for other xolox plugins
-Plugin 'xolox/vim-session'
-Plugin 'xolox/vim-easytags'
-Plugin 'godlygeek/tabular' " dependency for vim-markdown
-Plugin 'plasticboy/vim-markdown'
-
 Plugin 'mhinz/vim-startify'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -157,22 +128,9 @@ if executable('ag')
 endif
 
 
-"""""""""""""""""
-" Custom commands
-"""""""""""""""""
-
-" sudo save with :W
 """""""""""""""""""
-command W w !sudo tee % > /dev/null
-" sudo save with :w!!
-cmap w!! w !sudo tee > /dev/null %
-
-
-"""""""""""""""""""""""""""""""
-" Custom Keybindings
-" (mostly for Finnish keyboard)
-"""""""""""""""""""""""""""""""
-
+" Custom commands "
+"""""""""""""""""""
 let mapleader = ","
 
 map J <C-W>j
