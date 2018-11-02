@@ -1,5 +1,6 @@
 export TERM="xterm-256color"
 export EDITOR="vim"
+export PATH="$PATH:/home/ahalac/Documents/code/dotfiles/arcanist/bin/"
 
 source ~/.oh-my-zsh
 source ~/.antigen/antigen.zsh
