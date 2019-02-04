@@ -1,6 +1,7 @@
 export TERM="xterm-256color"
 export EDITOR="vim"
 export PATH="$PATH:/home/ahalac/Documents/code/dotfiles/arcanist/bin/"
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 source ~/.oh-my-zsh
 source ~/.antigen/antigen.zsh
@@ -14,6 +15,7 @@ alias mv="mv -iv"     # interactive, verbose
 alias grep="grep -i"  # ignore case
 alias cat="bat"       # Set default bat
 alias :q="exit"       # Quit 
+alias php="php72"     # Fuckin' php versions. #TempFix
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 antigen bundle command-not-found
@@ -52,6 +54,8 @@ alias la="exa -lahg --git --time-style=long-iso --group-directories-first"
 
 archlinux-java get
 go version
+php -v
+node -v
 
 ####################################################################################
 # Partial match and tab highlight                                                  #

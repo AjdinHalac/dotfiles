@@ -22,6 +22,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Raimondi/delimitMate'
 Plugin 'skammer/vim-css-color'
 Plugin 'mhinz/vim-startify'
+Plugin 'fatih/vim-go'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
