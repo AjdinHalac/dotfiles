@@ -24,6 +24,7 @@ Plugin 'skammer/vim-css-color'
 Plugin 'mhinz/vim-startify'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -134,11 +135,6 @@ endif
 " Custom commands "
 """""""""""""""""""
 let mapleader = ","
-
-map J <C-W>j
-map K <C-W>k
-map H <C-W>h
-map L <C-W>l
 
 " easier window navigation (http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally)
 nnoremap <C-J> <C-W><C-J>
