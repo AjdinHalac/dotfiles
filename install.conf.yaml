@@ -9,7 +9,10 @@
 - link:
     ~/.dotfiles: ''
 
-    # zsh & terminator
+    # termite
+    ~/.config/termite/config: ~
+
+    # zsh
     ~/.oh-my-zsh: ~
     ~/antigen: ~
     ~/.zshrc: ~
@@ -22,6 +25,9 @@
     # vim
     ~/.vimrc: ~
     ~/.vim/bundle: vim/bundle
+
+    # tmux
+    ~/.tmux.conf: ~
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
