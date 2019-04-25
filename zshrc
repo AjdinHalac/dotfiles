@@ -8,7 +8,7 @@ source ~/.antigen/antigen.zsh
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias ....='cd../../..'
+alias ....='cd ../../..'
 alias cp="cp -iv"     # interactive, verbose
 alias rm="rm -iv"     # interactive, verbose
 alias mv="mv -iv"     # interactive, verbose
