@@ -1,0 +1,61 @@
+[options]
+allow_bold = true
+audible_bell = false
+#bold_is_bright = true
+browser = xdg-open
+clickable_url = true
+cursor_blink = system
+cursor_shape = block
+dynamic_title = true
+filter_unmatched_urls = true
+font = Bitstream Vera Sans Mono 10
+#fullscreen = true
+icon_name = terminal
+#hyperlinks = false
+modify_other_keys = false
+mouse_autohide = false
+scroll_on_output = false
+scroll_on_keystroke = true
+scrollback_lines = 10000
+size_hints = false
+search_wrap = true
+#scrollbar = off
+urgent_on_bell = true
+highlight = #30343e
+[colors]
+#cursor_foreground = #dcdccc
+#foreground_bold = #ffffff
+foreground = #FFFFFF
+cursor = #0F9DBA
+#background = #1F1626
+background = rgba(31, 22, 38, 0.9)
+
+# Colors from color0 to color254 can be set
+color0=   #099BD7
+color1=   #D94085
+color2=   #2AB250
+color3=   #FFD16F
+color4=   #883CDC
+color5=   #0F9DBA
+color6=   #4F5D95
+color7=   #FFF8DD
+color8=   #099BD7
+color9=   #D94084
+color10=  #2AB250
+color11=  #FFD16F
+color12=  #883CDB
+color13=  #099BD7
+color14=  #4F5D95
+color15=  #FFF8DE
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
