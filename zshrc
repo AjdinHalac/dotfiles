@@ -1,11 +1,11 @@
 export TERM="xterm-256color"
 export EDITOR="vim"
-export PATH="$PATH:/home/ahalac/Documents/code/dotfiles/arcanist/bin/"
 export PATH="$PATH:$(go env GOPATH)/bin"
 
 source ~/.oh-my-zsh
 source ~/.antigen/antigen.zsh
 
+alias d10n='ssh root@167.99.246.169 -t zsh'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
