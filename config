@@ -32,21 +32,21 @@ background = rgba(31, 22, 38, 0.9)
 
 # Colors from color0 to color254 can be set
 color0=   #099BD7
-color1=   #D94085
+color1=   #D94084
 color2=   #2AB250
 color3=   #FFD16F
 color4=   #883CDC
 color5=   #0F9DBA
 color6=   #4F5D95
 color7=   #FFF8DD
-color8=   #099BD7
-color9=   #D94084
+color8=   #09D6AA
+color9=   #D93FD1
 color10=  #2AB250
 color11=  #FFD16F
 color12=  #883CDB
-color13=  #099BD7
+color13=  #0935D6
 color14=  #4F5D95
-color15=  #FFF8DE
+color15=  #DEE5FF
 [hints]
 #font = Monospace 12
 #foreground = #dcdccc
