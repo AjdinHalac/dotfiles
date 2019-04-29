@@ -7,14 +7,12 @@
 
 # null (or ~) value means symlink from file with same name without leading dot
 - link:
-    ~/.dotfiles: ''
-
     # termite
     ~/.config/termite/config: ~
 
     # zsh
     ~/.oh-my-zsh: ~
-    ~/antigen: ~
+    ~/.antigen: antigen
     ~/.zshrc: ~
     ~/.fzf: ~
 
@@ -22,12 +20,16 @@
     ~/.gitconfig: ~
     ~/.gitignore_global: ~
 
+    # irssi
+    ~/.irssi: irssi
+
     # vim
     ~/.vimrc: ~
     ~/.vim/bundle: vim/bundle
 
     # tmux
     ~/.tmux.conf: ~
+    ~/.tmux/plugins: tmux/plugins
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
