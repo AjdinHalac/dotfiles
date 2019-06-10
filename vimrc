@@ -23,6 +23,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'mhinz/vim-startify'
 Plugin 'fatih/vim-go'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -109,6 +110,12 @@ highlight GitGutterChangeDelete ctermfg=yellow guifg=darkyellow
 " plasticboy/vim-markdown
 """""""""""""""""""""""""
 let g:vim_markdown_folding_disabled=1
+
+" octol/vim-cpp-enhanced-highlight
+"""""""""""""""""""""""""
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
 
 " mhinz/vim-startify
 """"""""""""""""""""
