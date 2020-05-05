@@ -3,8 +3,7 @@
     autocrlf = input
 [user]
     name = Ajdin Halac
-    #email = ajdin.halac@hotmail.com
-    email = halac.ajdin@nsoft.com
+    email = ajdin.halac@hotmail.com
 [color]
     ui = true
 [push]
@@ -32,4 +31,7 @@
     enabled = true
     autoupdate = true
 [init]
+	templateDir = ~/.git/template_dir
 
+[url "git@github.com:"]
+	insteadOf = https://github.com/
