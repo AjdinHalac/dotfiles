@@ -14,6 +14,7 @@
     ~/.oh-my-zsh: ~
     ~/.antigen: antigen
     ~/.zshrc: ~
+    ~/.p10k.zsh: ~
     ~/.fzf: ~
 
     # git

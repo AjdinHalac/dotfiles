@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 export TERM="xterm-256color"
 export EDITOR="vim"
 export PATH="$PATH:$(go env GOPATH)/bin"
@@ -8,6 +15,7 @@ source ~/.antigen/antigen.zsh
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias please="sudo"
 alias cp="cp -iv"     # interactive, verbose
 alias rm="rm -iv"     # interactive, verbose
 alias mv="mv -iv"     # interactive, verbose
@@ -22,9 +30,7 @@ antigen bundle command-not-found
 antigen bundle tarruda/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle encode64
-# Theme: powerlevel9k
-## https://github.com/bhilburn/powerlevel9k
-POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/zsh-theme-powerlevel9k
+
 ## configurations:
 POWERLEVEL9K_MODE='none'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs status)
@@ -39,8 +45,6 @@ POWERLEVEL9K_DATE_FOREGROUND="249"
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
 POWERLEVEL9K_COLOR_SCHEME='dark'
 POWERLEVEL9K_HIDE_BRANCH_ICON=true
-
-antigen theme bhilburn/powerlevel9k powerlevel9k
 
 # Tell antigen that you're done.
 antigen apply
@@ -929,3 +933,17 @@ function prod_tax_rom_tmux {
     server_tmuxer $@
     server_tmuxer_cleanup
 }
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ahalac/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ahalac/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ahalac/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ahalac/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+alias k=kubectl
+complete -F __start_kubectl k
+
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
