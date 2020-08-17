@@ -45,6 +45,7 @@ POWERLEVEL9K_DATE_FOREGROUND="249"
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
 POWERLEVEL9K_COLOR_SCHEME='dark'
 POWERLEVEL9K_HIDE_BRANCH_ICON=true
+POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito'
 
 # Tell antigen that you're done.
 antigen apply
