@@ -78,9 +78,6 @@ setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
 
-alias c7e-staging='kubectl --kubeconfig=/home/ahalac/.kube/staging-ubercluster2 --namespace=c7e-default'
-alias c7e-prod='kubectl --kubeconfig=/home/ahalac/.kube/prod-ubercluster --namespace=c7e-default'
-
 function getArrayIndex {
     if [ -n "$BASH_VERSION" ]; then
         expr $1 - 1
