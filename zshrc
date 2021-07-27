@@ -12,6 +12,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 source ~/.oh-my-zsh
 source ~/.antigen/antigen.zsh
 
+alias AmongUs="sudo wine /home/ahalac/Downloads/Among.Us.v2020.9.9s/Among.Us.v2020.10.22s/Among\ Us.exe"
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
