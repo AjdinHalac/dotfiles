@@ -12,7 +12,6 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 source ~/.oh-my-zsh
 source ~/.antigen/antigen.zsh
 
-alias AmongUs="sudo wine /home/ahalac/Downloads/Among.Us.v2020.9.9s/Among.Us.v2020.10.22s/Among\ Us.exe"
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -23,7 +22,6 @@ alias mv="mv -iv"     # interactive, verbose
 alias grep="grep -i"  # ignore case
 alias cat="bat"       # Set default bat
 alias :q="exit"       # Quit 
-alias php="php72"     # Fuckin' php versions. #TempFix
 alias vi="vim"
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
@@ -31,6 +29,8 @@ antigen bundle command-not-found
 antigen bundle tarruda/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle encode64
+antigen bundle brew
+antigen bundle osx
 
 ## configurations:
 POWERLEVEL9K_MODE='none'
@@ -58,10 +58,7 @@ alias la="exa -lahg --git --time-style=long-iso --group-directories-first"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-archlinux-java get
 go version
-php -v
-node -v
 
 ####################################################################################
 # Partial match and tab highlight                                                  #
@@ -932,14 +929,6 @@ function prod_tax_rom_tmux {
     server_tmuxer $@
     server_tmuxer_cleanup
 }
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/ahalac/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ahalac/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/ahalac/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ahalac/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-alias k=kubectl
-complete -F __start_kubectl k
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 

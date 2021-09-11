@@ -7,22 +7,17 @@
 
 # null (or ~) value means symlink from file with same name without leading dot
 - link:
-    # termite
-    ~/.config/termite/config: ~
-
     # zsh
     ~/.oh-my-zsh: ~
     ~/.antigen: antigen
     ~/.zshrc: ~
     ~/.p10k.zsh: ~
     ~/.fzf: ~
+    ~/powerlevel10k: ~
 
     # git
     ~/.gitconfig: ~
     ~/.gitignore_global: ~
-
-    # irssi
-    ~/.irssi: irssi
 
     # vim
     ~/.vimrc: ~
