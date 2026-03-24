@@ -4,8 +4,6 @@
 [user]
     name = Ajdin Halac
     email = ajdin.halac@hotmail.com
-[includeIf "gitdir:~/go/src/github.com/teamhybird/"]
-    path = ~/go/src/github.com/teamhybird/.gitconfig
 [color]
     ui = true
 [push]

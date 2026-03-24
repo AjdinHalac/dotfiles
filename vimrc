@@ -20,12 +20,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Raimondi/delimitMate'
-Plugin 'neoclide/coc.nvim', {'pinned': 1}
 Plugin 'mhinz/vim-startify'
 Plugin 'fatih/vim-go'
-Plugin 'elixir-editors/vim-elixir'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
