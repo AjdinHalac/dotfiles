@@ -21,11 +21,11 @@
 
     # vim
     ~/.vimrc: ~
-    ~/.vim/bundle: vim/bundle
+    ~/.vim: vim
 
     # tmux
     ~/.tmux.conf: ~
-    ~/.tmux/plugins: tmux/plugins
+    ~/.tmux: tmux
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
